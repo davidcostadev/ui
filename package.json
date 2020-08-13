@@ -1,0 +1,26 @@
+{
+  "name": "@davidcostadev/ui",
+  "version": "1.0.0",
+  "description": "A package contains all ui component with design system created by davidcostadev",
+  "main": "src/index.tsx",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidcostadev/ui.git"
+  },
+  "keywords": [
+    "ui",
+    "react",
+    "styled-components",
+    "typescript",
+    "components"
+  ],
+  "author": "David Costa <davidcostadev@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidcostadev/ui/issues"
+  },
+  "homepage": "https://github.com/davidcostadev/ui#readme"
+}
