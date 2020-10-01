@@ -1,14 +1,26 @@
 {
   "name": "@davidcostadev/ui",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "A package contains all ui component with design system created by davidcostadev",
-  "main": "src/index.tsx",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.tsx",
+  "private": false,
   "scripts": {
-    "test": "jest"
+    "build": "rollup -c",
+    "build:watch": "rollup -c -w",
+    "test": "jest",
+    "semantic-release": "semantic-release"
   },
+  "engines": {
+    "node": ">=10"
+  },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/davidcostadev/ui.git"
+    "url": "https://github.com/davidcostadev/ui.git"
   },
   "keywords": [
     "ui",
@@ -22,5 +34,34 @@
   "bugs": {
     "url": "https://github.com/davidcostadev/ui/issues"
   },
-  "homepage": "https://github.com/davidcostadev/ui#readme"
+  "homepage": "https://github.com/davidcostadev/ui#readme",
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "styled-components": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@rollup/plugin-babel": "^5.2.0",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "babel-plugin-styled-components": "^1.11.1",
+    "jest": "^26.4.0",
+    "rollup": "^2.23.1",
+    "semantic-release": "^17.1.1",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "@types/styled-components": "^5.1.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1",
+    "tslib": "^2.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
