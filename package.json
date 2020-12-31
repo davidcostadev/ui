@@ -18,6 +18,7 @@
     "node": ">=10"
   },
   "files": [
+    "dist",
     "src",
     "Button.tsx"
   ],
