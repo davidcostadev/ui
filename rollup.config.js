@@ -1,6 +1,7 @@
 import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
 import resolve from '@rollup/plugin-node-resolve';
+import ts from '@wessberg/rollup-plugin-ts';
 import pkg from './package.json';
 
 export const ignoresNonDefaultExports = true;
@@ -25,5 +26,6 @@ export default {
     babel({ extensions: ['.ts', 'tsx'], include: ['src/**/*'] }),
     resolve({ extensions: ['.ts', '.tsx'] }),
     commonjs(),
+    ts(),
   ],
 };
