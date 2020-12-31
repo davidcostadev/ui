@@ -20,7 +20,9 @@
   "files": [
     "dist",
     "src",
-    "Button.ts"
+    "Button.ts",
+    "Input.ts",
+    "InputCurrency.ts"
   ],
   "repository": {
     "type": "git",
