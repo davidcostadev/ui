@@ -9,10 +9,16 @@
 - `npm install @davidcostadev/ui`
 - `yarn add @davidcostadev/ui`
 
+## Requirements
+
+- `styled-components`
+
 ## How to use
 
 ```tsx
 import { Button } from '@davidcostadev/ui';
+// or
+import Button from '@davidcostadev/ui/Button
 ```
 
 ## Documentation
