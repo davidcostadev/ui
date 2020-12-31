@@ -20,7 +20,7 @@
   "files": [
     "dist",
     "src",
-    "Button.tsx"
+    "Button.ts"
   ],
   "repository": {
     "type": "git",
