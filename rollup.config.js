@@ -23,9 +23,9 @@ export default {
     },
   ],
   plugins: [
+    ts(),
     babel({ extensions: ['.ts', 'tsx'], include: ['src/**/*'] }),
     resolve({ extensions: ['.ts', '.tsx'] }),
     commonjs(),
-    ts(),
   ],
 };

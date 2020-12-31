@@ -15,10 +15,53 @@
 
 ## How to use
 
+### Button
+
 ```tsx
 import { Button } from '@davidcostadev/ui';
 // or
-import Button from '@davidcostadev/ui/Button
+import Button from '@davidcostadev/ui/Button';
+```
+
+- with no styled-components
+
+```tsx
+import { Button } from '@davidcostadev/ui/Button';
+```
+
+### Input
+
+```tsx
+import { Input } from '@davidcostadev/ui';
+// or
+import Input from '@davidcostadev/ui/Input';
+```
+
+- with no styled-components
+
+```tsx
+import { Input } from '@davidcostadev/ui/Input';
+```
+
+### InputCurrency
+
+```tsx
+import { InputCurrency } from '@davidcostadev/ui';
+// or
+import InputCurrency from '@davidcostadev/ui/InputCurrency';
+```
+
+- with no styled-components
+
+```tsx
+import { InputCurrency } from '@davidcostadev/ui/InputCurrency';
+```
+
+### Importing libs
+
+```ts
+import { formatNumberToCurrency } from '@davidcostadev/ui/src/lib/formatNumberToCurrency';
+import { parseValueToNumber } from '@davidcostadev/ui/src/lib/parseValueToNumber';
 ```
 
 ## Documentation
