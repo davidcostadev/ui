@@ -57,6 +57,14 @@ import InputCurrency from '@davidcostadev/ui/InputCurrency';
 import { InputCurrency } from '@davidcostadev/ui/InputCurrency';
 ```
 
+### VerificationCode
+
+```tsx
+import { VerificationCode } from '@davidcostadev/ui';
+// or
+import VerificationCode from '@davidcostadev/ui/VerificationCode';
+```
+
 ### Importing libs
 
 ```ts

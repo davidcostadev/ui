@@ -22,7 +22,8 @@
     "src",
     "Button.ts",
     "Input.ts",
-    "InputCurrency.ts"
+    "InputCurrency.ts",
+    "VerificationCode.ts"
   ],
   "repository": {
     "type": "git",
