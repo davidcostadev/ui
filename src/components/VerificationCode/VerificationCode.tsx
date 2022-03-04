@@ -222,7 +222,7 @@ export class ReactCodeInput extends Component<ReactCodeInputProps, any> {
       lineHeight: `${fieldHeight}px`,
     };
     return (
-      <div className={`react-code-input-container' ${className}`} style={ROOT_STYLE}>
+      <div className={`react-code-input-container ${className}`} style={ROOT_STYLE}>
         {title && <p className={'title'}>{title}</p>}
         <div className={'react-code-input'}>
           {values.map((value: string, index: number) => (
