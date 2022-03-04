@@ -1,7 +1,7 @@
 # @davidcostadev/ui
 
 [![GitHub license](https://img.shields.io/github/license/davidcostadev/ui.svg)](https://github.com/davidcostadev/ui/blob/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/ui.svg)](https://www.npmjs.com/package/@davidcostadev/ui)
+[![npm version](https://badge.fury.io/js/%40davidcostadev%2Fui.svg)](https://www.npmjs.com/package/@davidcostadev/ui)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
 
 ## Installation
