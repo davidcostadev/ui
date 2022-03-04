@@ -14,7 +14,7 @@ const KEY_CODE = {
 };
 
 interface ReactCodeInputProps {
-  type?: 'text' | 'number';
+  type?: 'text' | 'number' | 'asul';
   onChange?: (val: string) => void;
   onComplete?: (val: string) => void;
   onFocus?: () => void;
