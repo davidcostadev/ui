@@ -1,7 +1,6 @@
-import React, { useState, ChangeEvent } from 'react';
-import styled from 'styled-components';
-import { parseValueToNumber } from 'lib/parseValueToNumber';
-import { formatNumberToCurrency } from 'lib/formatNumberToCurrency';
+import { useState, ChangeEvent } from 'react';
+import { parseValueToNumber } from '../lib/parseValueToNumber';
+import { formatNumberToCurrency } from '../lib/formatNumberToCurrency';
 
 type Props = {
   value: number;
@@ -9,6 +8,7 @@ type Props = {
   currency: string;
   noDecimal?: boolean;
   onChange: (value: number) => void;
+  className?: string;
 };
 
 export const InputCurrency = ({
@@ -17,6 +17,7 @@ export const InputCurrency = ({
   currency = 'USD',
   noDecimal = false,
   onChange,
+  className = '',
   ...props
 }: Props) => {
   const [currentValue, setValue] = useState(
@@ -29,12 +30,15 @@ export const InputCurrency = ({
     onChange(parsedValue);
   };
 
-  return <input {...props} type="text" onChange={handleChange} value={currentValue} />;
+  return (
+    <input
+      {...props}
+      type="text"
+      className={`text-red-500 ${className}`}
+      onChange={handleChange}
+      value={currentValue}
+    />
+  );
 };
 
-// WIP
-const InputCurrencyStyled = styled(InputCurrency)`
-  color: red;
-`;
-
-export default InputCurrencyStyled;
+export default InputCurrency;

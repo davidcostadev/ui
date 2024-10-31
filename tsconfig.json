@@ -1,40 +1,38 @@
 {
   "compilerOptions": {
-    "declaration": true,
-    "declarationDir": "./dist",
+    /* Target and Module */
+    "target": "ES2020",
     "module": "esnext",
-    "noImplicitAny": true,
-    "outDir": "./dist",
-    "target": "es5",
-    "moduleResolution": "node",
-    "baseUrl": "./src",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "isolatedModules": true,
-    "jsx": "react",
+    "moduleResolution": "bundler",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+
+    /* JavaScript Support */
+    "allowJs": false,
     "resolveJsonModule": true,
-    "esModuleInterop": true,
+
+    /* Build Options */
+    "noEmit": true,
+
+    /* Linting */
     "strict": true,
-    "pretty": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": false,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "useDefineForClassFields": true,
+    "allowImportingTsExtensions": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "downlevelIteration": true,
-    "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
-    "noImplicitReturns": true,
-    "skipLibCheck": true,
-    "allowSyntheticDefaultImports": true,
-    "stripInternal": true,
-    "emitDecoratorMetadata": false,
-    "experimentalDecorators": false,
-    "strictPropertyInitialization": true,
-    "importHelpers": true,
-    "sourceMap": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "noImplicitThis": true,
-    "alwaysStrict": true
+
+    /* Paths and Alias */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
-  "include": ["src/**/*", "stories/**/*"],
-  "exclude": ["coverage", "dist", "node_modules/**"]
+  "include": ["src/**/*", "./src/@types/*.d.ts"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
