@@ -25,3 +25,5 @@ storybook-static
 *.njsproj
 *.sln
 *.sw?
+
+*storybook.log
