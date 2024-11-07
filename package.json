@@ -4,12 +4,7 @@
   "description": "A package contains all ui component with design system created by davidcostadev",
   "type": "module",
   "files": [
-    "dist",
-    "src",
-    "Button.ts",
-    "Input.ts",
-    "InputCurrency.ts",
-    "VerificationCode.ts"
+    "dist"
   ],
   "main": "./dist/main.umd.cjs",
   "module": "./dist/main.js",
