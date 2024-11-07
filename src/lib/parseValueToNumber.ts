@@ -1,6 +1,6 @@
 export const parseValueToNumber = (value: string, noDecimal: boolean = false): number => {
   if (value.length) {
-    let valueStr = value.replace(/[^0-9]/g, '').padStart(3, '0');
+    const valueStr = value.replace(/[^0-9]/g, '').padStart(3, '0');
 
     if (Number.isNaN(parseInt(valueStr, 10))) {
       return 0;

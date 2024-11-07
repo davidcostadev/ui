@@ -1,12 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
-
-export const Input = ({ ...props }) => {
-  return <input {...props} />;
+export const Input = ({ className = '', ...props }) => {
+  return <input className={`text-red-500 ${className}`} {...props} />;
 };
 
-const InputStyled = styled(Input)`
-  color: red;
-`;
-
-export default InputStyled;
+export default Input;
