@@ -8,6 +8,7 @@
 
 - `npm install @davidcostadev/ui`
 - `yarn add @davidcostadev/ui`
+- `pnpm add @davidcostadev/ui`
 
 ## Documentation
 
